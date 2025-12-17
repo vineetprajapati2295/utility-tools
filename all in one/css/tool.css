@@ -1,0 +1,345 @@
+/* ============================================
+   Tool Page Specific Styles
+   ============================================ */
+
+/* Tool Page Layout */
+.tool-page {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tool-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.tool-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tool-description {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Tool Container */
+.tool-container {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+}
+
+/* Tool Actions */
+.tool-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.tool-actions .btn {
+    flex: 1;
+    min-width: 120px;
+}
+
+/* Input Section */
+.input-section {
+    margin-bottom: var(--spacing-lg);
+}
+
+.section-title {
+    font-size: 1.25rem;
+    color: var(--accent-primary);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Dynamic Input Fields */
+.dynamic-inputs {
+    margin-bottom: var(--spacing-md);
+}
+
+.input-row {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    align-items: flex-end;
+}
+
+.input-row .form-group {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.input-row .btn {
+    flex-shrink: 0;
+    padding: var(--spacing-sm);
+    min-width: auto;
+}
+
+/* Grade Entry */
+.grade-entry {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.grade-entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.grade-entry-title {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Countdown Display */
+.countdown-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+}
+
+.countdown-item {
+    background: var(--bg-tertiary);
+    border: 2px solid var(--accent-primary);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    text-align: center;
+}
+
+.countdown-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.countdown-label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* File Upload Area */
+.file-upload-area {
+    border: 2px dashed var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-xl);
+    text-align: center;
+    background: var(--bg-tertiary);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.file-upload-area:hover {
+    border-color: var(--accent-primary);
+    background: var(--bg-card);
+}
+
+.file-upload-area.dragover {
+    border-color: var(--accent-primary);
+    background: rgba(74, 158, 255, 0.1);
+}
+
+.file-upload-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--accent-primary);
+}
+
+.file-upload-text {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.file-upload-hint {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.file-input {
+    display: none;
+}
+
+/* Image Preview */
+.image-preview-container {
+    margin-top: var(--spacing-md);
+    text-align: center;
+}
+
+.image-preview {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.image-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+}
+
+.image-info-item {
+    text-align: center;
+}
+
+.image-info-label {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-xs);
+}
+
+.image-info-value {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--accent-primary);
+}
+
+/* QR Code Display */
+.qr-code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--spacing-lg) 0;
+}
+
+.qr-code-display {
+    background: white;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-md);
+    box-shadow: var(--shadow-md);
+}
+
+.qr-code-display canvas {
+    display: block;
+}
+
+.download-qr {
+    margin-top: var(--spacing-md);
+}
+
+/* Resume Builder */
+.resume-section {
+    margin-bottom: var(--spacing-lg);
+}
+
+.resume-preview {
+    background: white;
+    color: #000;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-md);
+    min-height: 800px;
+    margin-top: var(--spacing-md);
+    box-shadow: var(--shadow-lg);
+}
+
+.resume-preview h2 {
+    color: #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+}
+
+.resume-preview h3 {
+    color: #333;
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.resume-preview p {
+    color: #555;
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    margin: var(--spacing-sm) 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    transition: width 0.3s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .tool-header h1 {
+        font-size: 2rem;
+    }
+    
+    .tool-container {
+        padding: var(--spacing-md);
+    }
+    
+    .countdown-display {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .input-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .input-row .btn {
+        width: 100%;
+    }
+    
+    .tool-actions {
+        flex-direction: column;
+    }
+    
+    .tool-actions .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .tool-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .countdown-display {
+        grid-template-columns: 1fr;
+    }
+    
+    .countdown-value {
+        font-size: 2rem;
+    }
+}
+

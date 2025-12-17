@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Attendance Calculator - Calculate your attendance percentage. Track classes attended and total classes to maintain required attendance.">
+    <title>Attendance Calculator - Free Online Calculator | All-in-One Utilities</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/components.css">
+    <link rel="stylesheet" href="../../css/tool.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="../../index.html" style="text-decoration: none; color: inherit;">All-in-One Utilities</a></h1>
+                <p class="tagline">Free Tools for Everyone</p>
+            </div>
+            <nav class="nav">
+                <a href="../../index.html" class="nav-link">Home</a>
+                <a href="../../privacy.html" class="nav-link">Privacy</a>
+                <a href="../../terms.html" class="nav-link">Terms</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="tool-page">
+                <div class="tool-header">
+                    <h1>Attendance Calculator</h1>
+                    <p class="tool-description">
+                        Calculate your attendance percentage and find out how many classes you need to attend 
+                        to maintain the required attendance percentage.
+                    </p>
+                </div>
+
+                <!-- AdSense Placeholder - Banner below title -->
+                <div class="ad-container ad-banner">
+                    <div class="ad-placeholder">Advertisement</div>
+                </div>
+
+                <div class="tool-container">
+                    <div class="input-section">
+                        <div class="form-group">
+                            <label class="form-label" for="total-classes">Total Classes</label>
+                            <input type="number" id="total-classes" class="form-input" min="1" placeholder="Enter total number of classes">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="attended-classes">Classes Attended</label>
+                            <input type="number" id="attended-classes" class="form-input" min="0" placeholder="Enter number of classes attended">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="required-percentage">Required Percentage (Optional)</label>
+                            <input type="number" id="required-percentage" class="form-input" min="0" max="100" placeholder="e.g., 75">
+                        </div>
+                    </div>
+
+                    <div class="tool-actions">
+                        <button type="button" class="btn" id="calculate-btn">Calculate</button>
+                        <button type="button" class="btn btn-secondary" id="reset-btn">Reset</button>
+                    </div>
+
+                    <div id="result-container" style="display: none;">
+                        <div class="result-box">
+                            <div class="result-label">Current Attendance</div>
+                            <div class="result-value" id="attendance-result">0%</div>
+                            <div class="result-details" id="result-details"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AdSense Placeholder - After result section -->
+                <div class="ad-container ad-banner">
+                    <div class="ad-placeholder">Advertisement</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="ad-container ad-footer">
+                <div class="ad-placeholder">Advertisement</div>
+            </div>
+            <div class="footer-content">
+                <p>&copy; 2024 All-in-One Utilities. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="../../privacy.html">Privacy Policy</a>
+                    <a href="../../terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/utils.js"></script>
+    <script src="../../js/tools/attendance.js"></script>
+</body>
+</html>
+
