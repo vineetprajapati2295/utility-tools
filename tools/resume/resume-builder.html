@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Resume Builder - Create professional resumes online. Build and download your resume in minutes.">
+    <title>Resume Builder - Free Online Tool | All-in-One Utilities</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/components.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7011698064020568"
+     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/tool.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="../../index.html" style="text-decoration: none; color: inherit;">All-in-One Utilities</a></h1>
+                <p class="tagline">Free Tools for Everyone</p>
+            </div>
+            <nav class="nav">
+                <a href="../../index.html" class="nav-link">Home</a>
+                <a href="../../privacy.html" class="nav-link">Privacy</a>
+                <a href="../../terms.html" class="nav-link">Terms</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="tool-page">
+                <div class="tool-header">
+                    <h1>Resume Builder</h1>
+                    <p class="tool-description">
+                        Create a professional resume online. Fill in your details and generate a clean, 
+                        well-formatted resume that you can download or print.
+                    </p>
+                </div>
+
+                <!-- AdSense Placeholder - Banner below title -->
+                <div class="ad-container ad-banner">
+                    <div class="ad-placeholder">Advertisement</div>
+                </div>
+
+                <div class="tool-container">
+                    <div class="input-section">
+                        <h2 class="section-title">Personal Information</h2>
+                        <div class="grid grid-2">
+                            <div class="form-group">
+                                <label class="form-label" for="full-name">Full Name</label>
+                                <input type="text" id="full-name" class="form-input" placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" id="email" class="form-input" placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Phone</label>
+                                <input type="tel" id="phone" class="form-input" placeholder="+1 234 567 8900">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="location">Location</label>
+                                <input type="text" id="location" class="form-input" placeholder="City, Country">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="linkedin">LinkedIn Profile (Optional)</label>
+                            <input type="url" id="linkedin" class="form-input" placeholder="https://linkedin.com/in/yourprofile">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="website">Website/Portfolio (Optional)</label>
+                            <input type="url" id="website" class="form-input" placeholder="https://yourwebsite.com">
+                        </div>
+                    </div>
+
+                    <div class="input-section">
+                        <h2 class="section-title">Professional Summary</h2>
+                        <div class="form-group">
+                            <label class="form-label" for="summary">Summary</label>
+                            <textarea id="summary" class="form-textarea" rows="4" placeholder="Brief professional summary..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="input-section">
+                        <h2 class="section-title">Work Experience</h2>
+                        <div id="experience-container">
+                            <!-- Experience entries will be added here -->
+                        </div>
+                        <button type="button" class="btn btn-secondary" id="add-experience-btn">+ Add Experience</button>
+                    </div>
+
+                    <div class="input-section">
+                        <h2 class="section-title">Education</h2>
+                        <div id="education-container">
+                            <!-- Education entries will be added here -->
+                        </div>
+                        <button type="button" class="btn btn-secondary" id="add-education-btn">+ Add Education</button>
+                    </div>
+
+                    <div class="input-section">
+                        <h2 class="section-title">Skills</h2>
+                        <div class="form-group">
+                            <label class="form-label" for="skills">Skills (comma-separated)</label>
+                            <input type="text" id="skills" class="form-input" placeholder="JavaScript, Python, React, Node.js">
+                        </div>
+                    </div>
+
+                    <div class="tool-actions">
+                        <button type="button" class="btn" id="generate-btn">Generate Resume</button>
+                        <button type="button" class="btn btn-secondary" id="reset-btn">Reset</button>
+                    </div>
+
+                    <div id="preview-container" style="display: none;">
+                        <h2 class="section-title">Resume Preview</h2>
+                        <div class="resume-preview" id="resume-preview"></div>
+                        <div class="tool-actions" style="margin-top: 1rem;">
+                            <button type="button" class="btn" id="download-btn">Download as PDF</button>
+                            <button type="button" class="btn btn-secondary" id="print-btn">Print</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AdSense Placeholder - After result section -->
+                <div class="ad-container ad-banner">
+                    <div class="ad-placeholder">Advertisement</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="ad-container ad-footer">
+                <div class="ad-placeholder">Advertisement</div>
+            </div>
+            <div class="footer-content">
+                <p>&copy; 2024 All-in-One Utilities. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="../../privacy.html">Privacy Policy</a>
+                    <a href="../../terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/utils.js"></script>
+    <script src="../../js/tools/resume-builder.js"></script>
+</body>
+</html>
+

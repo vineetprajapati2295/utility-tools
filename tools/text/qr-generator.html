@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free QR Code Generator - Create QR codes for any text or URL. Generate and download QR codes instantly.">
+    <title>QR Code Generator - Free Online Tool | All-in-One Utilities</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/components.css">
+    <link rel="stylesheet" href="../../css/tool.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7011698064020568"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="../../index.html" style="text-decoration: none; color: inherit;">All-in-One Utilities</a></h1>
+                <p class="tagline">Free Tools for Everyone</p>
+            </div>
+            <nav class="nav">
+                <a href="../../index.html" class="nav-link">Home</a>
+                <a href="../../privacy.html" class="nav-link">Privacy</a>
+                <a href="../../terms.html" class="nav-link">Terms</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="tool-page">
+                <div class="tool-header">
+                    <h1>QR Code Generator</h1>
+                    <p class="tool-description">
+                        Generate QR codes for any text, URL, or data. Create and download QR codes instantly. 
+                        Perfect for sharing links, contact information, or any text content.
+                    </p>
+                </div>
+
+                <!-- AdSense Placeholder - Banner below title -->
+                <div class="ad-container ad-banner">
+                    <div class="ad-placeholder">Advertisement</div>
+                </div>
+
+                <div class="tool-container">
+                    <div class="input-section">
+                        <div class="form-group">
+                            <label class="form-label" for="qr-type">QR Code Type</label>
+                            <select id="qr-type" class="form-select">
+                                <option value="text">Text</option>
+                                <option value="url">URL</option>
+                                <option value="email">Email</option>
+                                <option value="phone">Phone Number</option>
+                                <option value="wifi">WiFi</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="text-input-group">
+                            <label class="form-label" for="qr-content">Enter Content</label>
+                            <textarea id="qr-content" class="form-textarea" rows="4" placeholder="Enter text or URL..."></textarea>
+                        </div>
+                        <div class="form-group" id="wifi-input-group" style="display: none;">
+                            <label class="form-label" for="wifi-ssid">WiFi SSID</label>
+                            <input type="text" id="wifi-ssid" class="form-input" placeholder="Network name">
+                            <label class="form-label" for="wifi-password" style="margin-top: 1rem;">Password</label>
+                            <input type="text" id="wifi-password" class="form-input" placeholder="WiFi password">
+                            <label class="form-label" for="wifi-security" style="margin-top: 1rem;">Security Type</label>
+                            <select id="wifi-security" class="form-select">
+                                <option value="WPA">WPA/WPA2</option>
+                                <option value="WEP">WEP</option>
+                                <option value="nopass">No Password</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="qr-size">QR Code Size</label>
+                            <input type="range" id="qr-size" class="form-input" min="200" max="800" step="50" value="400">
+                            <div style="display: flex; justify-content: space-between; margin-top: 0.5rem;">
+                                <span style="color: var(--text-muted); font-size: 0.875rem;">200px</span>
+                                <span id="size-value" style="color: var(--accent-primary); font-weight: 600;">400px</span>
+                                <span style="color: var(--text-muted); font-size: 0.875rem;">800px</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tool-actions">
+                        <button type="button" class="btn" id="generate-btn">Generate QR Code</button>
+                        <button type="button" class="btn btn-secondary" id="reset-btn">Reset</button>
+                    </div>
+
+                    <div id="result-container" style="display: none;">
+                        <div class="qr-code-container">
+                            <div class="qr-code-display" id="qr-code-display"></div>
+                            <button type="button" class="btn download-qr" id="download-btn">Download QR Code</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AdSense Placeholder - After result section -->
+                <div class="ad-container ad-banner">
+                    <div class="ad-placeholder">Advertisement</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="ad-container ad-footer">
+                <div class="ad-placeholder">Advertisement</div>
+            </div>
+            <div class="footer-content">
+                <p>&copy; 2024 All-in-One Utilities. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="../../privacy.html">Privacy Policy</a>
+                    <a href="../../terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/utils.js"></script>
+    <script src="../../js/tools/qr-generator.js"></script>
+</body>
+</html>
+
